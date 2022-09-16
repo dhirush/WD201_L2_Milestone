@@ -13,7 +13,7 @@ fs.readFile("home.html", (err, home) => {
   homeContent = home;
 });
 
-fs.readFile("Project.html", (err, project) => {
+fs.readFile("project.html", (err, project) => {
   if (err) {
     throw err;
   }
@@ -36,7 +36,7 @@ http
         response.write(registrationContent);
         response.end();
         break;
-      case "/Project":
+      case "/project":
         response.write(projectContent);
         response.end();
         break;
